@@ -29,7 +29,7 @@ const sumOfAngles = Number((angleA).toFixed(2)) + Number((angleB).toFixed(2)) + 
     document.getElementById('answer1').innerHTML =
       "<p>You calculated towards a Equilateral triangle type </p>" 
   }
-    else if(lengthA === lengthB || lengthB === lengthC || lengthC === lengthA) {
+    else if(lengthA === lengthB !== lengthC || lengthA !== lengthB === lengthC || lengthC === lengthA !== lengthB) {
     document.getElementById('answer1').innerHTML =
       "<p>You calculated towards a Isoceles triangle type</p>" 
   }
