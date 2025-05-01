@@ -7,8 +7,8 @@
 
 function calculaterandomnumber () {
 const lengthAString = prompt("Enter length A of the triangle (mm):")
-const lengthBString = prompt("Enter length A of the triangle (mm):")
-const lengthCString = prompt("Enter length A of the triangle (mm):")
+const lengthBString = prompt("Enter length B of the triangle (mm):")
+const lengthCString = prompt("Enter length C of the triangle (mm):")
 
 const lengthA = parseFloat(lengthAString)
 const lengthB = parseFloat(lengthBString)
@@ -21,22 +21,22 @@ const angleB = Math.acos((lengthC**2 + lengthA**2 - lengthB**2) / (2 * lengthC *
 const angleC = Math.acos((lengthA**2 + lengthB**2 - lengthC**2) / (2 * lengthA * lengthB)) * (180/Math.PI)
 const sumOfAngles = Number((angleA).toFixed(2)) + Number((angleB).toFixed(2)) + Number((angleC).toFixed(2))
 
-if (sumofAngles != 180) {
-
+  if (sumOfAngles != 180) {
   document.getElementById('answer1').innerHTML =
-  "<p>You can get a discount for the playplace</p>" 
+  "<p>...</p>" 
   }
-  else if {
+    else if(lengthA === lengthB === lengthC) {
     document.getElementById('answer1').innerHTML =
-      "<p>The Normal Price It Is</p>" 
+      "<p>You calculated towards a Equilateral triangle type </p>" 
   }
-    else if {
+    else if(lengthA === lengthB || lengthB === lengthC || lengthC === lengthA) {
     document.getElementById('answer1').innerHTML =
-      "<p>The Normal Price It Is</p>" 
+      "<p>You calculated towards a Isoceles triangle type</p>" 
   }
-    else {
+    else if (lengthA !== lengthB !== lengthC && lengthC !== lengthA) {
     document.getElementById('answer1').innerHTML =
-      "<p>The Normal Price It Is</p>" 
+      "<p>You calculated towards a Scalene triangle type </p>" 
   }
+  
 }
 
